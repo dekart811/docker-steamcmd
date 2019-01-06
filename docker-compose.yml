@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  latest:
+    build:
+      context: "./image/"
+      labels:
+        com.steamcmd.ubuntu.version: "latest"
+    image: "dekart811/steamcmd:latest"
+  cosmic:
+    build:
+      context: "./image/"
+      labels:
+        com.steamcmd.ubuntu.version: "cosmic"
+      args:
+        UBUNTU_VERSION: "cosmic"
+    image: "dekart811/steamcmd:cosmic"
+  bionic:
+    build:
+      context: "./image/"
+      labels:
+        com.steamcmd.ubuntu.version: "bionic"
+      args:
+        UBUNTU_VERSION: "bionic"
+    image: "dekart811/steamcmd:bionic"
+  xenial:
+    build:
+      context: "./image/"
+      labels:
+        com.steamcmd.ubuntu.version: "xenial"
+      args:
+        UBUNTU_VERSION: "xenial"
+    image: "dekart811/steamcmd:xenial"
