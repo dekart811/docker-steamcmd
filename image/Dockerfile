@@ -35,7 +35,7 @@ RUN mkdir -p Steam &&\
 
 WORKDIR /steam/Steam
 
-COPY ./init.sh /steam/Steam/init.sh
+COPY ./image/init.sh /steam/Steam/init.sh
 
 VOLUME ["/steam"]
 
