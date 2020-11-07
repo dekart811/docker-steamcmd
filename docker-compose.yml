@@ -7,6 +7,14 @@ services:
       labels:
         com.steamcmd.ubuntu.version: "latest"
     image: "dekart811/steamcmd:latest"
+  focal:
+    build:
+      context: "./image/"
+      labels:
+        com.steamcmd.ubuntu.version: "focal"
+      args:
+        UBUNTU_VERSION: "focal"
+    image: "dekart811/steamcmd:focal"
   bionic:
     build:
       context: "./image/"
