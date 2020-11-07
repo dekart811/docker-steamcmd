@@ -7,22 +7,6 @@ services:
       labels:
         com.steamcmd.ubuntu.version: "latest"
     image: "dekart811/steamcmd:latest"
-  disco:
-    build:
-      context: "./image/"
-      labels:
-        com.steamcmd.ubuntu.version: "disco"
-      args:
-        UBUNTU_VERSION: "disco"
-    image: "dekart811/steamcmd:disco"
-  cosmic:
-    build:
-      context: "./image/"
-      labels:
-        com.steamcmd.ubuntu.version: "cosmic"
-      args:
-        UBUNTU_VERSION: "cosmic"
-    image: "dekart811/steamcmd:cosmic"
   bionic:
     build:
       context: "./image/"
@@ -31,11 +15,3 @@ services:
       args:
         UBUNTU_VERSION: "bionic"
     image: "dekart811/steamcmd:bionic"
-  xenial:
-    build:
-      context: "./image/"
-      labels:
-        com.steamcmd.ubuntu.version: "xenial"
-      args:
-        UBUNTU_VERSION: "xenial"
-    image: "dekart811/steamcmd:xenial"
